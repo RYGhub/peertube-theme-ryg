@@ -1,0 +1,223 @@
+:root {
+    /* The main colors of the stylesheet */
+    --background: #0d193b;
+    --background-lighter: #142345;  /* rgba(160, 204, 255, 0.05) */
+    --background-lightest: #1C2B4F;  /* rgba(160, 204, 255, 0.10) */
+    --foreground-minor: #6f8db3;
+    --foreground: rgb(160, 204, 255);
+    --foreground-major: #ffffff;
+
+    /* Pastel colors */
+    --red: #ff7d7d;
+    --orange: #ffbb7d;
+    --yellow: #ffff7d;
+    --lime: #7dff7d;
+    --cyan: #7dffff;
+    --blue: #7d7dff;
+    --magenta: #ff7dff;
+
+    /* Link colors */
+    --link: #00caca;
+    --link-hover: #00ffff;
+    --link-active: #a0ffff;
+
+    /* Fonts */
+    --font-text: sans-serif;
+    --font-title: sans-serif;
+    --font-code: monospace;
+}
+
+body {
+    /* --- Peertube vars --- */
+    /*
+    --mainColor: var(--link);
+    --mainColorLighter: var(--link-hover);
+    --mainColorLightest: var(--link-active);
+    --mainHoverColor: var(--link-hover);
+    */
+    --mainBackgroundColor: var(--background);
+    --mainForegroundColor: var(--foreground);
+    --secondaryColor: var(--foreground-minor);
+
+    --greyForegroundColor: var(--foreground-minor);
+    --greyBackgroundColor: var(--background-lighter);
+
+    --menuForegroundColor: var(--foreground);
+    --menuBackgroundColor: var(--background);
+    --submenuColor: var(--background-lighter);
+
+    --inputForegroundColor: var(--foreground);
+    --inputBackgroundColor: var(--background);
+    --inputPlaceholderColor: var(--foreground);
+
+    --textareaForegroundColor: var(--foreground);
+    --textareaBackgroundColor: var(--background);
+    --markdownTextareaBackgroundColor: var(--background);
+
+    --actionButtonColor: var(--link);
+    --activatedActionButtonColor: var(--link-active);
+
+    --primary: var(--link);
+    --secondary: var(--foreground-minor);
+    --success: var(--lime);
+    --info: var(--blue);
+    --warning: var(--yellow);
+    --danger: var(--red);
+    --light: var(--mainForegroundColor);
+    --dark: var(--greyForegroundColor);
+}
+
+/* --- Links --- */
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+a:active {
+    color: var(--link-active);
+}
+
+
+h1, h2, h3, h4, h5, h6, .small-title {
+    color: var(--foreground-major) !important;
+    border-color: var(--background-lighter) !important;
+}
+
+.card, .border-top {
+    border-color: var(--background-lighter) !important;
+}
+
+.nav, .nav-link.active, .upload-video-container, textarea, .tab-content {
+    border-color: var(--background-lightest) !important;
+}
+
+.menu-wrapper {
+    scrollbar-color: rgba(160, 204, 255, 0.20) var(--background-lighter) !important;
+}
+
+.logged-in-block {
+    background-color: var(--background-lightest) !important;
+}
+
+.top-menu, .header, .footer {
+    background-color: var(--background-lighter) !important;
+}
+
+.block-title, .video-miniature-name, .video-channel-display-name, .actor-display-name {
+    color: var(--foreground-major) !important;
+}
+
+.video-miniature-account, .video-channel-name, .actor-name {
+    color: var(--link) !important;
+}
+
+.video-miniature-account:hover {
+    color: var(--link-hover) !important;
+}
+
+.video-miniature-account:active {
+    color: var(--link-active) !important;
+}
+
+.menu-wrapper svg, .notifications svg {
+    color: var(--foreground) !important;
+}
+
+.notifications svg g {
+    stroke: var(--foreground) !important;
+}
+
+.menu-wrapper a.active {
+    background-color: rgba(160, 204, 255, 0.20) !important;
+    color: var(--foreground-major) !important;
+}
+
+.menu-wrapper a.active svg {
+    color: var(--foreground-major) !important;
+}
+
+.progress span {
+    color: black !important;
+}
+
+.delete-me button {
+    background-color: red !important;
+}
+
+.button-link, .grey-button, .orange, .grey, .delete-history, .create-button, .add-button, .contact-admin, .peertube-select-button, a[fragment="notifications"], .btn {
+    background-color: var(--link) !important;
+    color: black !important;
+}
+
+.peertube-select-container {
+    background-color: white !important;
+}
+
+.peertube-select-container select, .peertube-select-button select {
+    color: black !important;
+}
+
+.button-link svg, .grey-button svg, .orange svg, .grey svg, .delete-history svg, .create-button svg, .add-button svg, .contact-admin svg, .peertube-select-button svg, a[fragment="notifications"] svg, .btn svg {
+    color: black !important;
+}
+
+.button-link svg g, .grey-button svg g, .orange svg g, .grey svg g, .delete-history svg g, .create-button svg g, .add-button svg g, .contact-admin svg g, .peertube-select-button svg g, a[fragment="notifications"] svg g, .btn g {
+    stroke: black !important;
+}
+
+.video, .video-playlist, .video-channel {
+    border-color: var(--background-lighter) !important;
+}
+
+input, span[role="checkbox"][aria-checked="false"] {
+    border-color: var(--foreground-minor) !important;
+}
+
+input[disabled] {
+    background-color: #555555 !important;
+    cursor: not-allowed !important;
+}
+
+span[role="checkbox"][aria-checked="true"] {
+    border-color: transparent !important;
+}
+
+.actor-name .btn {
+    background-color: transparent !important;
+    color: var(--link) !important;
+    stroke: var(--link) !important;
+}
+
+.warning {
+    background-color: var(--warning) !important;
+    color: black !important;
+}
+
+.danger {
+    background-color: var(--danger) !important;
+    color: black !important;
+}
+
+.table th, .table td {
+    border-color: var(--background-lighter) !important;
+}
+
+.badge-purple {
+    background-color: var(--magenta) !important;
+    color: black !important;
+}
+
+.badge-yellow {
+    background-color: var(--yellow) !important;
+    color: black !important;
+}
+
+.p-paginator, .p-dropdown, .p-paginator .p-dropdown .p-dropdown-label, .p-paginator .p-dropdown .p-dropdown-trigger {
+    color: var(--link) !important;
+    background-color: transparent !important;
+}

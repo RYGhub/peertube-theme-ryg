@@ -1,0 +1,22 @@
+{
+  "name": "peertube-theme-ryg",
+  "version": "2.2.3",
+  "description": "PeerTube RYG-blue theme",
+  "engine": {
+    "peertube": ">=2.2.0"
+  },
+  "keywords": [
+    "peertube",
+    "theme",
+    "ryg"
+  ],
+  "homepage": "https://github.com/RYGhub/peertube-theme-ryg",
+  "author": "steffo",
+  "bugs": "https://github.com/RYGhub/peertube-theme-ryg/issues",
+  "staticDirs": {},
+  "css": [
+    "assets/style.css"
+  ],
+  "clientScripts": [],
+  "translations": {}
+}
