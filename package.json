@@ -1,6 +1,6 @@
 {
   "name": "peertube-theme-ryg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "PeerTube RYG-blue theme",
   "engine": {
     "peertube": ">=2.2.0"
@@ -12,16 +12,10 @@
   ],
   "homepage": "https://github.com/RYGhub/peertube-theme-ryg",
   "author": "steffo",
-  "bugs": "https://github.com/RYGhub/peertube-theme-ryg/issues",
   "staticDirs": {},
   "css": [
     "assets/style.css"
   ],
   "clientScripts": [],
-  "translations": {},
-  "license": "AGPL-3.0-or-later",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RYGhub/peertube-theme-ryg.git"
-  }
+  "translations": {}
 }
